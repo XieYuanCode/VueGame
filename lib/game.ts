@@ -37,7 +37,7 @@ export class GameWithCharacters extends Game {
     super(name, source)
   }
 }
-export class GameWithOutCharacters extends Game {
+export class GameWithoutCharacters extends Game {
   constructor(
     public name: string,
     public source: string

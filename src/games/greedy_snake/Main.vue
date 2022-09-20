@@ -1,5 +1,7 @@
 <template>
-  <div>贪食蛇</div>
+  <div class="greedy_snake"></div>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts">
+
+</script>
