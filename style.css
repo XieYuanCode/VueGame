@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Gloria Hallelujah;
+  src: url(font/Gloria\ Hallelujah.ttf);
+}
+
+:root {
+  font-family: Gloria Hallelujah, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
