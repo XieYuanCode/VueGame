@@ -1,5 +1,5 @@
 import { defineStore, _GettersTree } from 'pinia'
-import { IGame } from "./game"
+import { GameWithCharacters, IGame } from "./game"
 
 interface IGameManagerStatus {
   games: IGame[]
