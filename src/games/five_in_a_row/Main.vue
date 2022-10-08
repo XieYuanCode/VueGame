@@ -10,6 +10,7 @@
     <div class="command-panel mt-5 flex items-center justify-around">
       <n-button @click="startGame">开始</n-button>
       <Chess chess-type="black"></Chess>
+      <Chess chess-type="white"></Chess>
     </div>
   </div>
 </template>
@@ -19,20 +20,19 @@ import { NButton } from "naive-ui"
 import ChessBox from "./ChessBox.vue";
 import Chess from './Chess.vue'
 import { useGame } from "./game";
-import { ref, computed, toRefs } from "vue";
 
 const game = useGame()
 
 const startGame = () => {
   game.start()
-  console.log(game.nextStepChessType);
 }
 
 </script>
 
 <style scoped>
 .chessboard {
-  grid-template-columns: repeat(14, 40px);
-  grid-template-rows: repeat(14, 40px);
+  grid-template-columns: repeat(14, 50px);
+  grid-template-rows: repeat(14, 50px);
+  box-shadow: -5px 5px 10px 0px gray;
 }
 </style>

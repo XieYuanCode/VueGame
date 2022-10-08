@@ -48,7 +48,7 @@ interface IGameActions {
   isFinished(): boolean
 }
 
-export const useGame = defineStore<"game", IGameStatus, IGameManagerGetters, IGameActions>("game", {
+export const useGame = defineStore<"five_in_a_row", IGameStatus, IGameManagerGetters, IGameActions>("five_in_a_row", {
   state: () => ({
     chessBoard: new ChessBoard(),
     whiteChessCountInBox: 112,
